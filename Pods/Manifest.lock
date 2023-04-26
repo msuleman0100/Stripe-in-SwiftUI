@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Stripe (23.7.0):
+    - StripeApplePay (= 23.7.0)
+    - StripeCore (= 23.7.0)
+    - StripePayments (= 23.7.0)
+    - StripePaymentsUI (= 23.7.0)
+    - StripeUICore (= 23.7.0)
+  - StripeApplePay (23.7.0):
+    - StripeCore (= 23.7.0)
+  - StripeCore (23.7.0)
+  - StripePayments (23.7.0):
+    - StripeCore (= 23.7.0)
+    - StripePayments/Stripe3DS2 (= 23.7.0)
+  - StripePayments/Stripe3DS2 (23.7.0):
+    - StripeCore (= 23.7.0)
+  - StripePaymentsUI (23.7.0):
+    - StripeCore (= 23.7.0)
+    - StripePayments (= 23.7.0)
+    - StripeUICore (= 23.7.0)
+  - StripeUICore (23.7.0):
+    - StripeCore (= 23.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - Stripe
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripePayments
+    - StripePaymentsUI
+    - StripeUICore
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Stripe: 1412a8389885cbeebd752de574419122d52957a9
+  StripeApplePay: b05917d11c0846ca3e2f67e59bf027efd1fe2195
+  StripeCore: bec0c90f6e153abeba70f015be25e17fada10084
+  StripePayments: faafc7e868e224aba8ff9d9c3833c17dde909f42
+  StripePaymentsUI: bed5acf82eaa9375553555087bfedc082f43c135
+  StripeUICore: f940d7e6908ba241380f25bf7062919890dd81e2
+
+PODFILE CHECKSUM: 4e30a4cb3fbd6e5d848456409e89a76e8de0b637
+
+COCOAPODS: 1.12.0
