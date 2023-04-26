@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CheckoutView.swift
 //  Stripe-in-SwiftUI
 //
 //  Created by Muhammad Suleman on 4/26/23.
@@ -8,15 +8,25 @@
 import SwiftUI
 import Stripe
 
-struct ContentView: View {
+struct CheckoutView: View {
     
-    @State private var cardNumber = "e"
-    @State private var expMonth = "e"
-    @State private var expYear = "e"
-    @State private var cvc = "e"
+    @State private var cardNumber = ""
+    @State private var expMonth = ""
+    @State private var expYear = ""
+    @State private var cvc = ""
     
     var body: some View {
         VStack {
+            
+            HStack {
+                Text("**Stripe Payment SwiftUI**")
+                    .font(.title2)
+                Spacer()
+            }
+            .padding()
+            
+            Spacer()
+            
             TextField("Card Number", text: $cardNumber)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             HStack {
@@ -30,14 +40,28 @@ struct ContentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(maxWidth: .infinity)
             }
+            
+            
+            Spacer()
+            
             Button(action: processPayment) {
-                Text("Pay")
+                Text("**Pay**")
+                    .font(.title2)
+                    .padding(.horizontal, 32)
+                    .padding(.vertical, 10)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+                    .padding()
             }
+            
+            
+            Spacer()
         }
         .padding()
     }
     
-    
+    // For processing payment.
     func processPayment() {
         let cardParams = STPCardParams()
         cardParams.number = self.cardNumber
@@ -50,7 +74,7 @@ struct ContentView: View {
             if let error = error {
                 // Handle error
                 print("Error: \(error.localizedDescription)")
-            } else if let token = token {
+            } else if token != nil {
                 // Use token to process payment
                 
                 let paymentMethodCardParams = STPPaymentMethodCardParams(cardSourceParams: cardParams)
@@ -95,12 +119,13 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct CheckoutView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CheckoutView()
     }
 }
 
+// Payment Handler...
 class PaymentHandler: NSObject, STPAuthenticationContext {
     func authenticationPresentingViewController() -> UIViewController {
         return UIApplication.shared.windows.first!.rootViewController!

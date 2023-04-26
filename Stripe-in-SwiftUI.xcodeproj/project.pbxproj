@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18D5B5D129F8F8450066AECB /* Stripe_in_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B5D029F8F8450066AECB /* Stripe_in_SwiftUIApp.swift */; };
-		18D5B5D329F8F8450066AECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B5D229F8F8450066AECB /* ContentView.swift */; };
+		18D5B5D329F8F8450066AECB /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D5B5D229F8F8450066AECB /* CheckoutView.swift */; };
 		18D5B5D529F8F8470066AECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D5B5D429F8F8470066AECB /* Assets.xcassets */; };
 		18D5B5D829F8F8470066AECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D5B5D729F8F8470066AECB /* Preview Assets.xcassets */; };
 		5DA9E0E7A6D7E911764179B4 /* Pods_Stripe_in_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C733109C1854E227D4BBDFE /* Pods_Stripe_in_SwiftUI.framework */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		18D5B5CD29F8F8450066AECB /* Stripe-in-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stripe-in-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D5B5D029F8F8450066AECB /* Stripe_in_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripe_in_SwiftUIApp.swift; sourceTree = "<group>"; };
-		18D5B5D229F8F8450066AECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18D5B5D229F8F8450066AECB /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		18D5B5D429F8F8470066AECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D5B5D729F8F8470066AECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C733109C1854E227D4BBDFE /* Pods_Stripe_in_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stripe_in_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				18D5B5D029F8F8450066AECB /* Stripe_in_SwiftUIApp.swift */,
-				18D5B5D229F8F8450066AECB /* ContentView.swift */,
+				18D5B5D229F8F8450066AECB /* CheckoutView.swift */,
 				18D5B5D429F8F8470066AECB /* Assets.xcassets */,
 				18D5B5D629F8F8470066AECB /* Preview Content */,
 			);
@@ -88,7 +88,6 @@
 				5F35510A58A90AEF065246C0 /* Pods-Stripe-in-SwiftUI.debug.xcconfig */,
 				C8B9C2450E4AAEA4FB3C3D61 /* Pods-Stripe-in-SwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D5B5D329F8F8450066AECB /* ContentView.swift in Sources */,
+				18D5B5D329F8F8450066AECB /* CheckoutView.swift in Sources */,
 				18D5B5D129F8F8450066AECB /* Stripe_in_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
